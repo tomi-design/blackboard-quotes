@@ -22,8 +22,24 @@ let onClick= function() {
 
     setTimeout(
         function(){
-            $('#quote').fadeOut(2000)},9000);
+            $('#quote').fadeOut(2000)},12000);
         }
 
 $('#quoteButton').click(onClick);
+
+/*let i= 0;
+let txt= blackboard.quotes;
+let speed = 50;
+
+function typewriter() {
+    if (i< text.length) {
+        document.getElementById('quote').innterHTML += txt.charAt(i);
+        i++;
+        setTimeout(typewriter, speed);
+    }
+}
+
+typewriter();*/
+
+
 });
