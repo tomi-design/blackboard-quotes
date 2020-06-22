@@ -163,7 +163,7 @@ button {
   position:absolute;
   top:0%;
   left:28%;
-  width:45%;
+  width:47%;
   font-family: 'Cabin Sketch', cursive;  
   color: white;
   font-size: 16px;
@@ -312,12 +312,12 @@ h1 {
 
 .quote {
   position:absolute;
-  top:15%;
+  top:0%;
   left:30%;
   width:40%;
   font-family: 'Cabin Sketch', cursive;  
   color: white;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .button-wrapper {
@@ -326,16 +326,53 @@ h1 {
 }
 
 button {
-  padding:12px;
-  font-size: 25px;
+  padding:10px;
+  font-size: 20px;
 }
 
 }
 
 
+@media only screen and (min-width: 1200px) {
 
 
-
+  h1 {
+    font-size: 60px;
+  }
+  
+  #mobilePic {
+    display:none;
+  }
+  
+  #picture {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 90%;
+  }
+  
+  .quote {
+    position:absolute;
+    top:10%;
+    left:30%;
+    width:40%;
+    font-family: 'Cabin Sketch', cursive;  
+    color: white;
+    font-size: 40px;
+  }
+  
+  .button-wrapper {
+    width:15%;
+    height:50%;
+  }
+  
+  button {
+    padding:12px;
+    font-size: 25px;
+  }
+  
+  }
 
 
 

@@ -12,7 +12,6 @@ blackboard.askQuote= function() {
     let roundedNumber= Math.floor(quoteArray);
     let chosenQuote= this.quotes[roundedNumber];
     $('#quote').text(chosenQuote);
-
 }
 
 
@@ -22,24 +21,23 @@ let onClick= function() {
 
     setTimeout(
         function(){
-            $('#quote').fadeOut(2000)},12000);
-        }
+            $('#quote').fadeOut(5000)},8000);
+        
 
-$('#quoteButton').click(onClick);
+    setTimeout(
+        function(){
+              $('#picture').attr('src', 'img/flowers.png');
+        }, 9000);
 
-/*let i= 0;
-let txt= blackboard.quotes;
-let speed = 50;
-
-function typewriter() {
-    if (i< text.length) {
-        document.getElementById('quote').innterHTML += txt.charAt(i);
-        i++;
-        setTimeout(typewriter, speed);
+    setTimeout(
+        function(){
+            $('#picture').attr('src', 'img/blackboard.png');
+        }, 15000);
+    
     }
-}
+   
+    $('#quoteButton').click(onClick);
 
-typewriter();*/
 
 
 });
